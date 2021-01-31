@@ -4,13 +4,8 @@ import { connect } from "react-redux";
 
 import CheckoutSummary from "../../components/Order/CheckoutSummary/CheckoutSummary";
 import ContactData from "./ContactData/ContactData";
-// import { purchaseInit } from "../../store/actions/order";
 
 class Checkout extends Component {
-  // componentWillMount() {
-  //   this.props.onInitPurchase();
-  // }
-
   checkoutCancelledHandler = () => {
     this.props.history.goBack();
   };

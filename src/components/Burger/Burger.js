@@ -4,17 +4,7 @@ import { withRouter } from "react-router-dom";
 import styles from "./Burger.module.css";
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
-// {
-//   ingredients: {
-//     salad: 1,
-//     bacon: 1,
-//     cheese: 2,
-//     meat: 2,
-//   },
-// };
-
 const Burger = (props) => {
-  // console.log(props);
   let transformedIngredients = Object.keys(props.ingredients)
     .map((ingrName) => {
       return [...Array(props.ingredients[ingrName])].map((_, i) => {
